@@ -66,7 +66,7 @@ Some CPU Information
     \----------------------------------------------------+-------------------------/
             Version 2.11.1210. Copyright (C) 2011 American Megatrends, Inc.        
 
-The BIOS is unlocked and appears to be able to boot from USB however I couldn't get this to work (at least not with the OPNsense installer and got fed up trying different combinations, so instead I used a linux box, USB-SATA adaptor and qemu:
+The BIOS is unlocked and appears to be able to boot from USB however I couldn't get this to work (at least not with the OPNsense installer) and got fed up trying different combinations, so instead I used a linux box, USB-SATA adaptor and qemu:
 
     sudo qemu-system-x86_64 -accel kvm -nographic -hda OPNsense-21.7.1-OpenSSL-serial-amd64.img -hdb /dev/<YOUR-DISK> -m 2048
     
