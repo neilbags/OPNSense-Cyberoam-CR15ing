@@ -72,4 +72,4 @@ The BIOS is unlocked and appears to be able to boot from USB however I couldn't 
     
 The default OPNsense password is 'opnsense'.
 
-To watch OPNsense boot on the Cyberoam you'll need to change the baud to 115200. There is a BIOS option to change the baud rate but I wan't game to try it.
+Get into the Cyberoam BIOS, and change the SATA mode to AHCI. Choose save and exit then switch your baud to 115200. You should see OPNSense booting. There is a BIOS option to change the baud rate but I wan't game to try it.
