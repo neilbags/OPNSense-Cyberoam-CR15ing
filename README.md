@@ -8,11 +8,9 @@ Hooking up a Cisco-style console cable give access to the serial console (they a
 
 ![20210826_110914](https://user-images.githubusercontent.com/2738833/130890603-eb123945-233d-42b3-b588-2785cc6381ee.jpg)
 
-There is also a 4-pin power connector next to the SATA port:
+There is also a 4-pin power connector next to the SATA port. The pinout is 12v-GND-GND-5v. I had no trouble powering a 2.5" SSD or hard drive from the 5v rail.
 
 ![20210826_110806](https://user-images.githubusercontent.com/2738833/130891172-b883aa17-70d8-4aec-9ab1-66031dbd39ff.jpg)
-
-The pinout appears to be 12v-GND-GND-5v. I had no trouble powering a 2.5" SSD or hard drive from the 5v rail.
 
 Fire up your favorite console software (I'm using minicom) and set the baud rate to 9600. You'll see a prompt where you've got about a second to press DEL to get into the BIOS.
 
@@ -40,6 +38,8 @@ Fire up your favorite console software (I'm using minicom) and set the baud rate
     |                                                    |ESC: Exit                |
     \----------------------------------------------------+-------------------------/
             Version 2.11.1210. Copyright (C) 2011 American Megatrends, Inc.        
+
+Some CPU Information
 
            Aptio Setup Utility - Copyright (C) 2011 American Megatrends, Inc.       
               Advanced                                                              
@@ -73,7 +73,3 @@ The BIOS is unlocked and appears to be able to boot from USB however I couldn't 
 The default OPNsense password is 'opnsense'.
 
 To watch OPNsense boot on the Cyberoam you'll need to change the baud to 115200. There is a BIOS option to change the baud rate but I wan't game to try it.
-
-
-
-
