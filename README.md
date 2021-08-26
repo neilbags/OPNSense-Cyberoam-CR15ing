@@ -75,6 +75,7 @@ The default OPNsense password is 'opnsense'.
 Get into the Cyberoam BIOS, and change the SATA mode to AHCI. Choose save and exit then switch your baud to 115200. You should see OPNSense booting. There is a BIOS option to change the baud rate but I wan't game to try it.
 
 The interfaces come up in the correct order:
+
     em0 -> LAN
     em1 -> WAN
     em2 -> DMZ
