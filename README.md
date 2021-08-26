@@ -68,9 +68,11 @@ Fire up your favorite console software (I'm using minicom) and set the baud rate
 
 The BIOS is unlocked and appears to be able to boot from USB however I couldn't get this to work (at least not with the OPNsense installer and got fed up trying different combinations, so instead I used a linux box, USB-SATA adaptor and qemu:
 
-    sudo qemu-system-x86_64 -accel kvm -nographic -hda OPNsense-21.7.1-OpenSSL-serial-amd64.img -hdb /dev/sdb -m 2048
+    sudo qemu-system-x86_64 -accel kvm -nographic -hda OPNsense-21.7.1-OpenSSL-serial-amd64.img -hdb /dev/<YOUR-DISK> -m 2048
     
 The default OPNsense password is 'opnsense'.
+
+To watch OPNsense boot on the Cyberoam you'll need to change the baud to 115200. There is a BIOS option to change the baud rate but I wan't game to try it.
 
 
 
